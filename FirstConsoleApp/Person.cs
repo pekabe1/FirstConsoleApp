@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace FirstConsoleApp
 {
-    public class Person
+    public struct Person // referencja na stosie 
     {
-        public string Name = "Kacper";
+        public string Name;
         public string LastName { get; set; }
-        public int? Birthdate { get; set; }// musi byc wartosc
+        public int? Birthdate { get; set; }//  ? check for null
 
         public int GetAge()
         {
@@ -18,10 +18,10 @@ namespace FirstConsoleApp
         }
 
         //ctor tab tab
-        public Person()
-        {
-            Birthdate = 1993;
-            
-        }
+        //public Person()
+        //{
+        //    Birthdate = 1993;
+
+        //}
     }
 }

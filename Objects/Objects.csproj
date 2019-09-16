@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0FC72C8C-E368-4E6A-9156-006C3AF2670A}</ProjectGuid>
+    <ProjectGuid>{DEFB3B3E-5147-43EA-AFB6-5322479B8CE7}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>FirstConsoleApp</RootNamespace>
-    <AssemblyName>FirstConsoleApp</AssemblyName>
+    <RootNamespace>Objects</RootNamespace>
+    <AssemblyName>Objects</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,10 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="interfejsy.cs" />
+    <Compile Include="AbstractAnimal.cs" />
+    <Compile Include="Horse.cs" />
+    <Compile Include="IAnimal.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Snake.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
